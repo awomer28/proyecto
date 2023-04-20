@@ -4,5 +4,4 @@ numpy
 matplotlib==3.5.3
 seaborn
 datetime
-PIL
 statsmodels
