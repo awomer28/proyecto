@@ -35,7 +35,9 @@ st.title('Financial Data Analysis, UK Budget Speeches')
 st.markdown("##")
 st.markdown("##")
 
-reg = pd.read_csv(r"D:\directory\bond_regression_df.csv")
+csv_url = "https://raw.githubusercontent.com/awomer28/proyecto/main/bond_regression_df.csv"
+reg = pd.read_csv(csv_url)
+
 reg = reg.loc[reg["diff_days"] > -16]
 
 days = reg.groupby("diff_days", as_index=False)[['UK_1_Yr_Govt_Bond_Yield_percent', 'UK_10_Yr_Govt_Bond_Yield_percent',
